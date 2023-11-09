@@ -2,29 +2,46 @@
 <html lang="en">
   <head>
     <link rel="stylesheet" href="FinalPrj.css" />
+    <link rel="icon" type="icon" href="GooseIcon.ico" />
     <title>Goose Music</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   </head>
   <body class="lightBlueBackground">
     <header class="darkBlueBackground">
       <h1 class="forestGreenText">Goose Music</h1>
-      <nav class="BlueBackground" class="lightGreenText">
-        <a class="normalText" href="index.html">Home</a>
-        <a class="normalText" href="members.html">Members</a>
-        <a class="normalText" href="albums.html">Music</a>
-        <a class="normalText" href="concerts.html">Concerts</a>
+      <nav class="BlueBackground">
+        <div class="lightGreenText">
+          <a class="normalText" href="index.html">Home</a>
+          <a class="normalText" href="members.html">Members</a>
+          <a class="normalText" href="albums.html">Music</a>
+          <a class="normalText" href="concerts.html">Concerts</a>
+        </div>
       </nav>
     </header>
     <main class="lightGreenText">
       <h1>Hello we are the Geese and this is our official website!</h1>
+      <form>
+        <input
+          type="radio"
+          id="fontSelect"
+          name="fontSelect"
+          value="ComicSans"
+        />
+        <label for="ComicSans">Comic Sans</label><br />
 
-      <form method="post">
-        <label for="fontSelect">Select a font:</label>
-        <select id="fontSelect" name="fontSelect">
-          <option value="ComicSans">Comic Sans</option>
-          <option value="ComicFont">Comic Papyrus</option>
-          <option value="Papyrus">Papyrus</option>
-          <option value="Agradir">Agradir</option>
-        </select>
+        <input
+          type="radio"
+          id="fontSelect"
+          name="fontSelect"
+          value="ComicFont"
+        />
+        <label for="ComicFont">Comic Papyrus</label><br />
+
+        <input type="radio" id="fontSelect" name="fontSelect" value="Papyrus" />
+        <label for="Papyrus">Papyrus</label><br />
+
+        <input type="radio" id="fontSelect" name="fontSelect" value="Agradir" />
+        <label for="Agradir">Agradir</label><br />
         <input type="submit" value="Change Font" />
       </form>
       <hr />
