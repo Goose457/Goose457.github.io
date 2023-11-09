@@ -1,0 +1,17 @@
+h1 {
+  position: absolute;
+  top: 40%;
+  left: 40%;
+
+  font-size: 100px;
+  font-family: "Times New Roman", Times, serif;
+  background: linear-gradient(to bottom, lightgrey, blue);
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+}
+p {
+
+
+-webkit-fon
+
+}
