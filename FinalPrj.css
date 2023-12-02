@@ -1,6 +1,10 @@
 @font-face {
-  font-family: Agrandir-Regular;
+  font-family: Agrandir-RegularOTF;
   src: url(Agrandir-Regular.otf);
+}
+@font-face {
+  font-family: Agrandir-RegularTTF;
+  src: url(Agrandir-Regular.ttf);
 }
 .BlueBackground {
   background-color: #1a48a7;
@@ -47,31 +51,30 @@
 }
 
 body {
-  font-family: Agrandir;
-}
-
-header {
-  border-radius: 10px, 10px, 10px, 10px;
+  font-family: "Agrandir-Regular OTF", "Agrandir-RegularTTF";
 }
 
 header nav {
-  margin-top: 0;
-  text-align: center;
   font-size: 30px;
-  display: block;
+  height: auto;
 }
 
-header nav {
-  padding-left: 10px;
-  padding-right: 10px;
+header nav div {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
 }
-
-header nav a,
-header nav a:active {
+header nav div a,
+header nav div a:active {
   color: rgb(174, 252, 159);
 }
 
-header nav a:hover {
+header nav div a {
+  margin-top: 20px;
+  margin-bottom: 15px;
+}
+
+header nav div a:hover {
   color: forestgreen;
   background-color: #0e3175;
 }
@@ -82,7 +85,8 @@ header h1 {
   margin-right: auto;
   width: 50%;
   padding-bottom: 0;
-  margin-bottom: 0;
+  margin-bottom: 20px;
+  margin-top: 0;
   font-size: 4em;
 }
 
@@ -97,10 +101,15 @@ body main td {
   border-collapse: collapse;
 }
 
-body main div table {
+body main.concerts div table {
   margin-left: auto;
   margin-right: auto;
   width: 100%;
+}
+
+body main div img {
+  float: right;
+  max-width: 700px;
 }
 
 body main table {
@@ -125,7 +134,6 @@ body main a:active {
   color: rgb(174, 252, 159);
   background-color: #1a48a7;
   padding: 15px;
-  border-radius: 5px, 5px, 5px, 5px;
   border: #1a48a7;
   border-width: 15em;
 }
@@ -134,13 +142,34 @@ body main a:hover {
   background-color: #0e3175;
 }
 
-body main div div {
-  border: black;
-  border-style: solid;
-  border-width: 3px;
-  border-radius: 3px;
-}
-
 footer {
   text-align: center;
+}
+
+.Album {
+  display: flex;
+  flex-direction: row;
+}
+
+main div.Album h2 {
+  padding: 10px;
+}
+
+main div.Album img {
+  margin-top: 30px;
+}
+
+body main.members div img {
+  float: right;
+  max-width: 550px;
+}
+
+body main.members div.center table {
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+body main.members div.center table tr th {
+  font-size: 20px;
 }
